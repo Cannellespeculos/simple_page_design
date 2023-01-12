@@ -1,15 +1,96 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="icon" type="image/svg+xml" href="/vite.svg">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- link css here only when ccs is not imported in js yet -->
-    <!-- <link rel="stylesheet" href="/css/style.css"> -->
-    <title>Hello</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    <!-- <script src="./js/app.js" type="module"></script> -->
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/vite.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="projet html/css">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>simple page</title>
+</head>
+
+<body>
+  <header>
+    <img src="image/logo.svg" id="logo"></a>
+    <button id="free_consult">Free Consultation</button>
+  </header>
+
+  <main>
+
+    <h1 id="title">Design solution made easy</h1>
+    <p>With over ten years of experience in various design disciplines, I'm your one-stop shop for your design needs.
+    </p>
+
+    <div class="cards">
+      <article id="art1">
+        <h2>Graphic Design</h2>
+      </article>
+
+      <article id="art2">
+        <h2>UI/UX</h2>
+      </article>
+
+      <article id="art3">
+        <h2>Apps</h2>
+      </article>
+
+      <article id="art4">
+        <h2>Illustrations</h2>
+      </article>
+
+      <article id="art5">
+        <h2>Photography</h2>
+      </article>
+
+      <article id="art6">
+        <h2>Motion Graphics</h2>
+      </article>
+
+    </div>
+
+    <section>
+      <img src="image/image-amy.webp" class="amy">
+      <h2>I'm Amy, and I'd love to work on your next project</h2>
+      <p>I love working with others to create beautiful design solutions. I've designed everything from brand
+        illustrations
+        to complete mobile apps. I'm also handy with a camera!
+      </p>
+      <button id="free_consult2">Free consultation</button>
+    </section>
+
+
+    <div class="carousel">
+      <h2>My work</h2>
+      <div class="carousel_content">
+        <img src="image/image-slide-1.jpg" class="slide">
+        <img src="image/image-slide-2.jpg" class="slide" alt="">
+        <img src="image/image-slide-3.jpg" class="slide" alt="">
+        <img src="image/image-slide-4.jpg" class="slide" alt="">
+        <img src="image/image-slide-5.jpg" class="slide" alt="">
+      </div>
+    </div>
+    <div class="btn_all">
+      <button class="btn" id="btn_1"><img src="image/icon-arrow-left.svg"></button>
+      <button class="btn" id="btn_2"><img src="image/icon-arrow-right.svg"></button>
+    </div>
+
+    <article class="call">
+      <h2>Book a call with me</h2>
+      <p>
+        I'd love to have a chat to see how I can help you. The best first step is for us to discuss your project during
+        a
+        free consultation. Then we can move forward from there.
+      </p>
+      <button class="btnj">Free consultation</button>
+    </article>
+  </main>
+
+  <footer>
+    <img src="image/logo.svg" alt="logo" class="logo2">
+    <button class="last_btn">Free consultation</button>
+  </footer>
+  <script src="./js/app.js" type="module"></script>
+</body>
+
 </html>
