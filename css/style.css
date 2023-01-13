@@ -6,11 +6,13 @@ body {
     font-size: 18px;
     width: 100vw;
     height: 100vh;
+    text-align: center;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
+
+p {
+    font-size: 18px;
+    color: #7A746E;
     text-align: center;
 }
 
@@ -24,9 +26,9 @@ header {
 }
 
 #title {
-    margin: 5% 0%;
-    width: 85%;
     font-family: sans-serif;
+    font-size: 56px;
+    text-align: center;
 }
 
 #free_consult {
@@ -42,15 +44,14 @@ header {
 }
 
 #art1 {
-    margin: 5% 0%;
-    width: 80%;
     display: flex;
     align-items: flex-end;
+    width: 100%;
+    height: 100%;
     background-color: #755CDE;
     color: white;
     width: 343px;
     height: 364px;
-    margin: 10px;
     border-radius: 8px;
     padding-left: 10px;
     background-image: url(../image/pattern-graphic-design.svg);
@@ -59,19 +60,15 @@ header {
     grid-area: 1 / 1 / 3 / 3;
 }
 
-#first_pattern {
-    width: 150px;
-    height: 200px;
-}
-
 #art2 {
     display: flex;
     align-items: flex-end;
+    width: 100%;
+    height: 100%;
     color: white;
     background-color: #F6A560;
     width: 159px;
     height: 182px;
-    margin: 10px;
     border-radius: 8px;
     background-image: url(../image/pattern-ui-ux.svg);
     background-repeat: no-repeat;
@@ -79,19 +76,15 @@ header {
     grid-area: 3 / 1 / 4 / 2;
 }
 
-#second_pattern {
-    width: 64px;
-    height: 64px;
-}
-
 #art3 {
     display: flex;
     align-items: flex-end;
+    width: 100%;
+    height: 100%;
     color: white;
     background-color: #F39E9E;
     width: 159px;
     height: 182px;
-    margin: 10px;
     border-radius: 8px;
     background-image: url(../image/pattern-apps.svg);
     background-repeat: no-repeat;
@@ -99,19 +92,15 @@ header {
     grid-area: 3 / 2 / 4 / 3;
 }
 
-#third_pattern {
-    width: 64px;
-
-}
-
 #art4 {
     display: flex;
     align-items: flex-end;
+    width: 100%;
+    height: 100%;
     color: white;
     background-color: #EB7565;
     width: 343px;
     height: 158px;
-    margin: 10px;
     border-radius: 8px;
     background-image: url(../image/pattern-illustrations.svg);
     background-repeat: no-repeat;
@@ -119,19 +108,15 @@ header {
     grid-area: 4 / 1 / 5 / 3;
 }
 
-.fourth_pattern {
-    width: 128px;
-    height: 64px;
-}
-
 #art5 {
     display: flex;
     align-items: flex-end;
+    width: 100%;
+    height: 100%;
     color: white;
     background-color: #61C4B7;
     width: 343px;
     height: 158px;
-    margin: 10px;
     border-radius: 8px;
     background-image: url(../image/pattern-photography.svg);
     background-repeat: no-repeat;
@@ -142,30 +127,48 @@ header {
 #art6 {
     display: flex;
     align-items: flex-end;
+    width: 100%;
+    height: 100%;
     color: white;
     background-color: #552049;
     width: 343px;
     height: 158px;
-    margin: 10px;
     margin-bottom: 30px;
     border-radius: 8px;
     background-image: url(../image/pattern-motion-graphics.svg);
     background-repeat: no-repeat;
     background-position: 90% 10%;
+    grid-area: 6 / 1 / 7 / 3;
 }
 
-div {
-    display: flex;
-    flex-wrap: wrap;
+.cards {
+    display: grid;
     justify-content: center;
     margin: 10px;
     flex-direction: row;
+    grid-template-columns: 0.5fr repeat(2, 0.5fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
 }
 
 .amy {
     width: 300px;
     height: 300px;
     margin: 20px;
+    display: flex;
+    align-self: center;
+}
+
+button {
+    font-size: 18px;
+}
+
+.presentation {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 
@@ -176,6 +179,7 @@ div {
     height: 44px;
     border: none;
     border-radius: 15px;
+    text-align: center;
 }
 
 #free_consult2:hover {
@@ -183,9 +187,10 @@ div {
 }
 
 .carousel {
-    width: 420px;
+    width: 4020px;
     height: fit-content;
     display: flex;
+    align-self: center;
 }
 
 .carousel_content {
@@ -197,6 +202,7 @@ div {
     overflow-x: visible;
     flex-wrap: nowrap;
     overflow: hidden;
+
 }
 
 /* .carousel_content div {
@@ -208,6 +214,8 @@ div {
     justify-content: space-evenly;
 }
 
+
+
 #btn_1:active {
     background-color: #552049;
 }
@@ -217,8 +225,6 @@ div {
 }
 
 .slide {
-    width: 240px;
-    height: 200px;
     padding: 10px;
     border-radius: 10%;
 }
@@ -292,14 +298,79 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
-    main {
-        display: flex;
-        align-items: center;
+    body {
+        width: 100vw;
+        height: 100vh;
+        text-align: center;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr repeat(4, 0.5fr);
+        grid-template-rows: repeat(3, 1fr);
     }
 
     #art1 {
-        grid-area: 2 / 2 / 2 / 3;
+        grid-area: 1 / 1 / 3 / 2;
     }
+
+    #art2 {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+
+    #art3 {
+        grid-area: 1 / 3 / 2 / 4;
+    }
+
+    #art4 {
+        grid-area: 2 / 2 / 3 / 4;
+    }
+
+    #art5 {
+        grid-area: 3 / 1 / 4 / 2;
+    }
+
+    #art6 {
+        grid-area: 3 / 2 / 4 / 4;
+    }
+
+
+}
+
+@media screen and (min-width : 1040px) {
+    .cards {
+        display: grid;
+        grid-template-columns: 0.5fr 1fr repeat(2, 0.7fr) 1.8fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    #art1 {
+        grid-area: 1 / 2 / 3 / 3;
+    }
+
+    #art2 {
+        grid-area: 1 / 3 / 1 / 4;
+    }
+
+    #art3 {
+        grid-area: 1 / 4 / 2 / 5;
+    }
+
+    #art5 {
+        grid-area: 1 / 5 / 2 / 6;
+    }
+
+    #art4 {
+        grid-area: 2 / 3 / 3 / 5;
+    }
+
+    #art6 {
+        grid-area: 2 / 5 / 3 / 5;
+    }
+
+
 
 
 }

@@ -1,6 +1,7 @@
 const content = document.getElementsByClassName("carousel_content")
+const btn1 = document.getElementById("btn_1")
+const slide = document.getElementsByClassName("slide")
 
-document.getElementById("btn_1").addEventListener("click", (ev) => {
-    content[0].style.tranform = `translateX(100%)`;
-    console.log(content[0]);
-})
+// btn1.addEventListener("click", () => {
+//     slide.className.add = "active"
+// }) 
